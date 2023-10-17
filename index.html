@@ -52,6 +52,11 @@ p.ex1 {
 <body style="background-color:#FFFFFF;margin-left:50px;">
 <button id="colorButton">Click me to change colour</button>
 
+<script type=”text/javascript”>
+google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
+google.charts.setOnLoadCallback(drawChart);
+</script>
+  
 <script>
  // Get a reference to the button element
  var button = document.getElementById("colorButton");
