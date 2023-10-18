@@ -51,10 +51,13 @@ p.ex1 {
 
 <body style="background-color:#FFFFFF;margin-left:50px;">
 <button id="colorButton">Click me to change colour</button>
+
+<script type=”text/javascript”>
+google.charts.load('current', { 'packages' : ['corechart'] });
+google.charts.setOnLoadCallback(drawChart);
+</script>
   
 <script type="text/javascript">
-        google.charts.load('current', { 'packages' : ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
         function drawChart() {
               var data = google.visualization.arrayToDataTable([
                     ['Task', 'Hours per Day'],
@@ -71,27 +74,6 @@ p.ex1 {
               chart.draw(data, options);
         }
         
-        function drawChart() {
-              var data = new google.visualization.DataTable();
-              data.addColumn('number', 'Age');
-              data.addColumn('number', 'Salary');
-
-              data.addRows([
-                    [25, 40000],
-                    [30, 50000],
-                    [35, 60000],
-                    [40, 75000],
-                    [45, 80000],
-                    [50, 90000]
-              ]);
-              var options = {
-                    title: 'Age vs. Salary',
-                    hAxis: { title: 'Age' },
-                    vAxis: { title: 'Salary' }
-              };
-              var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
-              chart.draw(data, options);
-        }
 </script>
   
 <script>
