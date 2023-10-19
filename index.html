@@ -48,7 +48,6 @@ p.ex1 {
 
 <body style="background-color:#FFFFFF;margin-left:50px;">
   <div id="piechart_div" style="width: 500px; height:300px;"></div>
-  <div id="linechart_div" style="width: 500px; height:300px;"></div>
   <script type="text/javascript">
     google.charts.load('current', {'packages' : ['corechart'] });
     google.charts.setOnLoadCallback(drawPieChart);
@@ -67,9 +66,7 @@ p.ex1 {
                 var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
                 chart.draw(data, options);
           }
-
-  </script>
-  <script type="text/javascript">
+    
     google.charts.load('current', {'packages' : ['corechart'] });
     google.charts.setOnLoadCallback(drawLineChart);
           function drawLineChart() {
@@ -90,7 +87,7 @@ p.ex1 {
                   hAxis: { title: 'Age' },
                   vAxis: { title: 'Salary' }
                 };
-                var chart = new google.visualization.ScatterChart(document.getElementById('linechart_div'));
+                var chart = new google.visualization.ScatterChart(document.getElementById('piechart_div'));
                   chart.draw(data, options);
           }
 
