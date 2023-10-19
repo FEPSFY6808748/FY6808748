@@ -50,8 +50,9 @@ p.ex1 {
   <div id="chart_div" style="width: 500px; height:300px;"></div>
   <script type="text/javascript">
     google.charts.load('current', {'packages' : ['corechart'] });
-    google.charts.setOnLoadCallback(drawChart);
-          function drawChart() {
+    google.charts.setOnLoadCallback(drawPieChart);
+    google.charts.setOnLoadCallback(drawLineChart);
+          function drawPieChart() {
                 var data = google.visualization.arrayToDataTable([
                       ['Task', 'Hours per Day'],
                       ['Work', 8],
@@ -67,7 +68,7 @@ p.ex1 {
                 chart.draw(data, options);
           }
 
-          function drawChart() {
+          function drawLineChart() {
                 var data = new google.visualization.DataTable();
                 data.addColumn('number', 'Age');
                 data.addColumn('number', 'Salary');
