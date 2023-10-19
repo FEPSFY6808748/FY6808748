@@ -67,8 +67,7 @@ p.ex1 {
                 var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
                 chart.draw(data, options);
           }
-    
-    google.charts.load('current', {'packages' : ['corechart'] });
+  
     google.charts.setOnLoadCallback(drawLineChart);
           function drawLineChart() {
                 var data = new google.visualization.DataTable();
