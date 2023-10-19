@@ -51,7 +51,6 @@ p.ex1 {
   <script type="text/javascript">
     google.charts.load('current', {'packages' : ['corechart'] });
     google.charts.setOnLoadCallback(drawPieChart);
-    google.charts.setOnLoadCallback(drawLineChart);
           function drawPieChart() {
                 var data = google.visualization.arrayToDataTable([
                       ['Task', 'Hours per Day'],
@@ -68,6 +67,10 @@ p.ex1 {
                 chart.draw(data, options);
           }
 
+  </script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages' : ['corechart'] });
+    google.charts.setOnLoadCallback(drawLineChart);
           function drawLineChart() {
                 var data = new google.visualization.DataTable();
                 data.addColumn('number', 'Age');
