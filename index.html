@@ -34,11 +34,13 @@
             
     </style>
 
-<style>
-p.ex1 {
-  margin-left: 250px;
-}
-</style>
+    <style>
+      p.ex1 {
+        font-family: arial, sans-serif;
+        word-wrap: break-word;
+        margin-left: 50px;
+      }
+    </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www/w3schools.com/w3css/4/w3.css">
@@ -46,52 +48,7 @@ p.ex1 {
 .mySlides {display:none;}
 </style>
 
-<body style="background-color:#FFFFFF;margin-left:50px;">
-  <div id="piechart_div" style="width: 500px; height:300px;"></div>
-  <div id="linechart_div" style="width: 500px; height:300px;"></div>
-  <script type="text/javascript">
-    google.charts.load('current', {'packages' : ['corechart'] });
-    google.charts.setOnLoadCallback(drawPieChart);
-          function drawPieChart() {
-                var data = google.visualization.arrayToDataTable([
-                      ['Task', 'Hours per Day'],
-                      ['Work', 8],
-                      ['Sleep', 8],
-                      ['Eat', 2],
-                      ['Study', 4],
-                      ['Exercise', 2]
-                ]);
-                var options = {
-                      title: 'My Daily Activities'
-                };
-                var chart = new google.visualization.PieChart(document.getElementById('piechart_div'));
-                chart.draw(data, options);
-          }
-  
-    google.charts.setOnLoadCallback(drawLineChart);
-          function drawLineChart() {
-                var data = new google.visualization.DataTable();
-                data.addColumn('number', 'Age');
-                data.addColumn('number', 'Salary');
-
-                data.addRows([
-                  [25, 40000],
-                  [30, 50000],
-                  [35, 60000],
-                  [40, 75000],
-                  [45, 80000],
-                  [50, 90000]
-                ]);
-                var options = {
-                  title: 'Age vs. Salary',
-                  hAxis: { title: 'Age' },
-                  vAxis: { title: 'Salary' }
-                };
-                var chart = new google.visualization.ScatterChart(document.getElementById('linechart_div'));
-                  chart.draw(data, options);
-          }
-
-  </script>
+<body style="background-color:#FFFFFF;margin-left:50px;font-family: arial, sans-serif;">
   
 <!table of contents>
 <table>
@@ -122,130 +79,138 @@ document.getElementById("date&time").innerHTML = d;
 <p class="ex1">
 <hr>
 <h3 id="Abstract">Abstract</h3>
+  Over the last few years, we have heard that electric cars are the future and more environmentally friendly, but are they? Cars have been the most common form of transport for over 60 years <a href="#Gunn, 2018">(Gunn, 2018)</a> and play a massive part in taking over a billion people globally from A to B every day <a href="#Movotiv, 2021">Movotiv, 2021</a>. Here we discuss the role electric cars play in the future of automobiles and their advantages and disadvantages as the world transitions into a greener future.
 </p>
   
 <p class="ex1">
 <pre>
-  Intro
-  Over the last few years, we have heard that electric cars are the future and that they are more environmentally 
-  friendly? But are they? Cars have been the most common form of transport for over 100 years and play a massive part
-  in taking billions of people from A to B every single day. Today, we will be discussing the future of automobiles, 
-  the role that electric cars play in this and their advantages and disadvantages as the world transitions into a 
-  greener and more renewable future.
-
-  1) Carbon emissions
-  There has been a long standing debate about whether electric cars are more environmentally friendly than Diesel 
-  and Petrol vehicles and in this chapter of the video I will present some statistics from studies that answer this 
-  question. The answer is yes, kiind of... 
-  You see, the question of whether electric cars are more enviromentally friendly than Diesel and Petrol vehicles
-  is a multi-factorial question which I like to think of as a "closed-loop" system. Let me show you what I mean...
-  Here, we can see the "CO2 emissions from mining the raw materials required to manufacture the electric vehicle 
-  and battery pack that goes inside the vehicle" at the top of the loop which is connected to the "CO2 emissions of 
-  the electric vehicle during operation" at the right side of the loop. The "CO2 emissions of the electric vehicle 
-  during operation" is connected to "Battery and ev recycling" at the bottom of the loop which is finally connected 
-  to "Energy sources that generate the electricity powering electric vehicles" at the left side of the loop. In this
-  chapter of the video we will be talking about the CO2 emission of the electric vehicle during operation.
-
-  You see combustion engines in Diesel and Petrol vehicles emit a lot of Carbon dioxide and electric cars not only 
-  remove carbon emissions during the operation of the vehicle but in many cases operate at a much higher efficiency 
-  overall. To truly understand why this is we have to understand how combustion engines and electric motors work. 
-  Combustion engines (as suggested by the name) have to burn compressed fuel and air ignited by an electrical spark,
-  creating a small explosion in the cylinder which pushes a piston downwards and creates rotary motion by spinning 
-  a crankshaft that turns the wheels and a byproduct of this reaction is, you guessed it... CO2. 
-  On the other hand, Electric vehicles use the electrical energy stored in the battery pack to power an induction 
-  motor instead which uses a spinning electromagnet, which reverses the poles at constant intervals, to turn a 
-  crankshaft once again which turns the wheels as a result. This distinct difference in the way that combustion 
-  engines and electrical motors work is the reason electric cars emit less CO2 during the operation of the vehicle 
-  however the question of whether this means they are more environmentally friendly is a more complicated question 
-  as I will get into next.
-
-  2) Energy sources
-  Next, coming back to our closed loop we will move on to Energy sources generating the electricity powering electric
-  vehicles. This is admittedly an area that needs a lot more work done in order to reduce Carbon emissions as most 
-  energy used to power electric vehicles are generated from the burning of fossil fuels, in the UK specifically 
-  around 60% of energy is generated from fossil fuels and 40% is generated from renewables whereas in the US its a 
-  lot worse where 80% of total energy production comes from the burning of fossil fuels and only 20% is generated 
-  from renewables. However, the issue of energy sources and fossil fuels is one that is easily fixable as the 
-  solution to this is clear and that is investment. More investment from governments and the private sector into 
-  renewables is required in order to drastically reduce carbon emissions and get closer to achieving "net zero". 
-
-  3) Battery recycling and raw materials
-  Moving on to the next part of the closed loop system we have Battery recycling and raw materials. Battery recycling
-  is also an area that needs a lot of work as to clear up a common misconception the reason a lot of used batteries 
-  end up in landfill is not that batteries cannot be recycled (as on average over 80% of the internal elements of a 
-  battery can be recycled) but that there are currently not enough battery recycling facilities and the necessary 
-  infrastructure to process and recycle all these batteries and meet demand. However, there are many companies in the 
-  private sector that are stepping up to this challenge as a business opportunity and tackling this shortage of 
-  battery recycling facilities such as Redwood recycling founded by a former executive of Elon Musk's Tesla and with
-  the right support in government funding towards the private sector, this problem is also easily solvable in the 
-  long term future.
-  Another largely contested argument surrounding electric vehicles is the mining of raw materials such as Lithium,
-  Cobalt and Nickel in order to manufacture the battery packs that go inside of electric vehicles this is sort of a
-  redundant argument as the difference between ev's and icu's in this case is that lithium, cobalt and nickel in used
-  battery packs can be repeatedly recycled over lifetimes whereas burning petrol and diesel in order to power a 
-  vehicle cannot be reversed and once this takes place these fumes are released into the atmosphere which then leads
-  to things like climate change and global warming which despite the refusal of many conspiracy theorists is a very
-  REAL problem and has increased the frequency of a lot of natural disasters taking place as we have seen in the last
-  decade which is ultimately detremental to humans and the environment. Furthermore MIT have done a study a few years
-  ago that concludes that even considering the carbon emissions of mining the raw materials required to manufacture
-  ev battery packs, ev's still produce a significantly less amount of Carbon emissions in comparison to petrol and 
-  diesel vehicles across their lifetimes which means that in this sense ev's are more environmentally friendly than 
-  petrol and diesel vehicles.
-
-  4) Price and performace
-  Finally in the last chapter of this video we will cover the price and performance of electric vehicles. The price 
-  of a car is very important as in order for electric cars to become an option for working class people they need to
-  be affordable enough and this has become a reality over the last 10 years as innovation in the production of ev's 
-  and the manufacturing of the batteries used inside of them has driven costs down to as low as 20-£30,000 and even 
-  cheaper in the used market which is now starting to make electric vehicles accessible to most people of median 
-  incomes in many western countries. Performance in electric vehicles have also improved dramatically as many 
-  electric vehicles can now do over 300 miles on a single charge which is more than enough for most people living in
-  urban areas and doing short daily commutes which statistics show is the case a majority of the time. A notorious 
-  area of debate from ev critics is ev charging which has also seen massive improvements over the last decade thanks 
-  to innovations from Tesla in charging technology where electric vehicles can now be charged up to 80% in as short 
-  15 minutes and this technology will become mainstream for ev's moving forward making this argument redundant once 
-  again and its also worth mentioning that most ev owners have a charging plug for their ev's that they use to charge
-  their ev's overnight so most of the time as long as you are aware of how many charges you have left you can just 
-  charge at home overnight without having to charge at a ev charging station or being subject to increasing gas 
-  prices which have been an increasing benefit of ev's especially for the last year.
-
-  5) Conclusion
-  Overall Ev's are set to become the future of transport as most automotive companies are set to shift all their 
-  vehicle productions to electric vehicles from 2030 onwards. Furthermore, to answer the main question of whether 
-  electric cars are really saving the environment, the answer is in theory is yes but in order to make this a reality
-  there only one major problem left to make electric cars truly and definitively more environmentally friendly than
-  petrol and diesel vehicles which is shifting the energy sources used to generate the electricity used to power 
-  electric vehicles entirely to renewables which will become a reality with increased government investment into 
-  renewables moving forward.
 </pre>
 </p>
 
 <p class="ex1">
-<pre>
-<h3 id="Introduction">Introduction</h3>
-</pre>
+<h3 id="Introduction":>Introduction</h3>
+  There has been a long-standing debate about whether electric cars are more environmentally friendly than Diesel and Petrol vehicles and I will present some statistics from studies that answer this question. The answer is yes, sort of...
 </p>
 
 <p class="ex1">
-<pre>
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
-</pre>
+  <p>
+    <h4>1) Carbon emissions</h4>
+    You see, this question is a multi-factorial question which can be thought of as a "closed-loop" system as illustrated in figure 1. In this chapter, we will consider the “CO2 emissions of the electric vehicle during operation.” Combustion engines in Diesel and Petrol vehicles emit a lot of Carbon dioxide <a href="#European Environment Agency, 2020">(European Environment Agency, 2020)</a>, and electric cars not only remove tailpipe carbon emissions <a href="#US Department of Energy, 2021">(US Department of Energy, 2021)</a> but operate at a much higher efficiency overall <a href="#Boloor, 2019">(Boloor, 2019)</a>. To understand why this is, we must understand how combustion engines and electric motors work. Combustion engines (see figure 2) have to burn compressed fuel, creating a small explosion in the cylinder which pushes a piston downwards and creates rotary motion by spinning a crankshaft that turns the wheels and a byproduct of this reaction is CO2 <a href="#Vehicle Technologies Office, 2013">(Vehicle Technologies Office, 2013)</a>. On the other hand, electric vehicles (see figure 3) use electrical energy stored in the battery pack to power an induction motor which uses a spinning electromagnet that reverses the poles at constant intervals <a href="#Energy Education">(Energy Education)</a>, to turn a crankshaft which turns the wheels as a result <a href="#US Department of Energy">(US Department of Energy)</a>. This difference in the way that combustion engines and electric motors work is the reason electric cars emit no CO2 during the operation of the vehicle however the question of whether this means they are more environmentally friendly is more complicated.
+  </p>
+
+  <div style="text-align: center;">
+  <img src="EV closed-loop system.png" alt="Figure 1" width=300 height=300>
+  <img src="combustion engine diagram.png" alt="Figure 2" width=300 height=350>
+  <img src="electric induction motor diagram.png" alt="Figure 3" width=500 height=300>
+  </div>
+
+  <p>
+    <h4>2) Energy sources</h4>
+    Next, coming back to our closed loop (figure 1) we will move on to Energy sources generating the electricity powering electric vehicles. This is an area that needs a lot more work done to reduce Carbon emissions as most energy used to power electric vehicles is generated from the burning of fossil fuels. In the UK 39% of electricity is generated from fossil fuels, 42% from renewables, and 19% from Nuclear and other sources <a href="#Department for Energy Security & Net Zero, 2023">(Deparment for Energy Security & Net Zero, 2023)</a> whereas in the US 60% of electricity production comes from burning fossil fuels, 20% from renewables and 20% from Nuclear and other sources <a href="#Center for Sustainable Systems, 2023">(Center for Sustainable Systems, 2023)</a>. More investment from governments and the private sector into renewables is required to reduce carbon emissions and get closer to achieving "net zero" <a href="#Department for Energy Security and Net Zero, 2023">(Department for Energy Security and Net Zero, 2023)</a>.
+  </p>
+
+  <div style="text-align: center;">
+  <img src="UK electricity production by energy source 2022.png" alt="Figure 4" width=350 height=300>
+  <img src="US electricity production by energy source 2022.jpeg" alt="Figure 5" width=450 height=300>
+  </div>
+
+  <p>
+    <h4>3) Battery recycling and raw materials</h4>
+    Moving on to the next part of our closed-loop system, we have battery recycling which currently poses a challenge due to the lack of battery recycling facilities and infrastructure to meet the demand for used batteries that otherwise end up in landfills <a href="#Government Office for Science, 2023">(Government Office for Science, 2023)</a>. However, many companies in the private sector are stepping up to this challenge as a business opportunity such as Redwood Recycling <a href="#Redwood Recycling, 2023">(Redwood Recycling, 2023)</a>founded by JB Straubel, a former executive of Elon Musk's Tesla. With the right support in government funding towards the private sector, this problem is also solvable in the long term future. The argument against mining raw materials such as lithium, cobalt and nickel for EV batteries becomes less significant when taking into account that 80% of these metals in used battery packs can be repeatedly recycled <a href="#Eurostat, 2023">(Eurostat, 2023)</a> which in this sense means EV batteries can be very close to having net zero emissions over multiple lifetimes <a href="#National Grid, 2022">(National Grid, 2022)</a> whereas greenhouse gases released from the burning of petrol and diesel to power ICE vehicles exacerbates global warming unless you use carbon capture or offset methods to extract and recapture carbon in the atmosphere which can be a very costly process <a href="#Adam Baylin-Stern, 2021">(Adam Baylin-Stern, 2021)</a>. Furthermore, MIT has done a study that concludes that even considering the carbon emissions of mining the raw materials required to manufacture EVs and their battery packs, EVs still produce significantly less Carbon emissions in comparison to petrol and diesel vehicles across their lifetimes which means that in this sense, EVs are more environmentally friendly than ICE vehicles <a href="#Moseman, 2022">(Moseman, 2022)</a>.
+  </p>
+
+  <div style="text-align: center;">
+  <img src="CO2 emissions in last 60 years diagram.png" alt="Figure 6" width=450 height=300>
+  <img src="battery recycling plant.png" alt="Figure 7" width=500 height=300>
+  </div>
+
+  <p>
+    <h4>4) Price and performance</h4>
+    Affordability and performance are critical factors for the widespread adoption of EVs. Innovations in the manufacturing process of EVs and EV batteries have driven costs down to as low as £30,000 and cheaper in the used market which is making electric vehicles accessible to people of median incomes <a href="#Office for Zero Emission Vehicles, 2022">(Office for Zero Emission Vehicles, 2022)</a>. Improvements in battery technology mean that many EVs can do over 300 miles on a single charge <a href="#Hill, 2023">(Hill, 2023)</a> more than addressing the needs of urban commuters doing short, daily commutes <a href="#Department for Transport, 2019">(Department for Transport, 2019)</a>. Innovations in charging technology have also resulted in EVs being able to reach a charge of 80% in as short as 20 minutes <a href="#Tesla, 2023">(Tesla, 2023)</a> and this technology will become mainstream for EVs moving forward surpassing yet another important hurdle <a href="#International Energy Agency, 2023">(International Energy Agency, 2023)</a>. It is also worth mentioning that most EV owners have a charging plug for their EVs so they can charge at home overnight without having to charge at an EV charging station or being subject to increasing gasoline prices which have been an increasing benefit of EVs, especially for the past year <a href="#International Energy Agency, 2023">(International Energy Agency, 2023)</a>.
+  </p>
+
+  <div style="text-align: center;">
+  <img src="tesla model 3.jpg" alt="Figure 8" width=500 height=300>
+  <img src="charging ev.jpg" alt="Figure 9" width=500 height=300>
+  </div>
+
+  <p>
+    <h4>5) Conclusion</h4>
+    Overall, EVs are set to become the future of transport as most automotive companies pledge to shift 100% of their product lines to electric vehicles from 2035 onwards <a href="#Department for Transport, 2023">(Department for Transport, 2023)</a>. Furthermore, to answer the main question of whether electric cars are really saving the environment, the answer is in theory, yes, but to make this a reality there is only one major problem left and that is shifting the energy sources used to generate electricity powering electric vehicles entirely to renewables which will become a reality with increased government investment into renewables moving forward <a href="#Department for Energy Security and Net Zero, 2023">(Department for Energy Security and Net Zero, 2023)</a>.
+  </p>
+
+  <div style="text-align: center;">
+  <img src="solar panel farm.jpg" alt="Figure 10" width=450 height=300>
+  <img src="offshore wind turbine farm.jpg" alt="Figure 11" width=500 height=300>
+  </div>
 </p>
 
-<p class="ex1">
 <h3 id="References">References</h3>
-  <pre>
-    Aslan, C (2023)
-  </pre>
+<p style="font-size: 13px">
+    <h5 id="Adam Baylin-Stern, 2021">Adam Baylin-Stern, N. B. (2021). Is carbon capture too expensive? International Energy Agency. International Energy Agency. Retrieved 11 30, 2023, from <a href="https://www.iea.org/commentaries/is-carbon-capture-too-expensive">https://www.iea.org/commentaries/is-carbon-capture-too-expensive</a></h5>
+    
+    <h5 id="Aslan, 2022">Aslan, C. (Producer), Aslan, C. (Writer), & Aslan, C. (Director). (2022). Are electric cars REALLY saving the environment? [Motion Picture]. England. Retrieved 12 03, 2023, from <a href="https://www.youtube.com/watch?v=ifMkHUv0EoU&t=38s">https://www.youtube.com/watch?v=ifMkHUv0EoU&t=38s</a></h5>
+
+    <h5 id="Boloor, 2019">Boloor, M. V. (2019). Electric Vehicles Basics. New York: Natural Resources Defence Council. Retrieved 10 29, 2023, from <a href="https://www.nrdc.org/bio/madhur-boloor/electric-vehicle-basics#:~:text=Electric%20motors%20makes%20vehicles%20substantially,for%20a%20gas%20combustion%20engine.">https://www.nrdc.org/bio/madhur-boloor/electric-vehicle-basics#:~:text=Electric%20motors%20makes%20vehicles%20substantially,for%20a%20gas%20combustion%20engine.</a></h5>
+    
+    <h5 id="Center for Sustainable Systems, 2023">Center for Sustainable Systems. (2023). US Renewable Energy Factsheet. University of Michigan, Center for Sustainable Systems. Michigan: Center for Sustainable Systems. Retrieved 11 03, 2023, from <a href="https://css.umich.edu/publications/factsheets/energy/us-renewable-energy-factsheet#:~:text=About%2079%25%20of%20the%20nation%27s,trend%20has%20continued%20through%202022.">https://css.umich.edu/publications/factsheets/energy/us-renewable-energy-factsheet#:~:text=About%2079%25%20of%20the%20nation%27s,trend%20has%20continued%20through%202022.</a></h5>
+    
+    <h5 id="Department for Energy Security & Net Zero, 2023">Department for Energy Security & Net Zero. (2023). Energy Trends. UK Government, Department for Energy Security & Net Zero. London: Office for National Statistics. Retrieved 10 25, 2023, from <a href="https://assets.publishing.service.gov.uk/media/6513fe8ef6746b000da4bab5/Energy_Trends_September_2023.pdf">https://assets.publishing.service.gov.uk/media/6513fe8ef6746b000da4bab5/Energy_Trends_September_2023.pdf</a></h5>
+    
+    <h5 id="Department for Energy Security and Net Zero, 2023">Department for Energy Security and Net Zero. (2023). Powering Up Britian: Net Zero Growth Plan. UK government, Department for Energy Security and Net Zero. London: Department for Energy Security and Net Zero. Retrieved 11 30, 2023, from <a href="https://www.gov.uk/government/publications/powering-up-britain/powering-up-britain-net-zero-growth-plan">https://www.gov.uk/government/publications/powering-up-britain/powering-up-britain-net-zero-growth-plan</a>
+    
+    <h5 id="Department for Transport, 2019">Department for Transport. (2019). National travel survey: 2019. UK government, Department for Transport. London: Department for Transport. Retrieved 11 30, 2023, from <a href="https://assets.publishing.service.gov.uk/media/5f27f7748fa8f57ac683d856/national-travel-survey-2019.pdf">https://assets.publishing.service.gov.uk/media/5f27f7748fa8f57ac683d856/national-travel-survey-2019.pdf</a></h5>
+    
+    <h5 id="Department for Transport, 2023">Department for Transport. (2023). Government sets out path to zero emission vehicles by 2035. UK government, Department for Transport. London: Department for Transport. Retrieved 11 30, 2023, from <a href="https://www.gov.uk/government/news/government-sets-out-path-to-zero-emission-vehicles-by-2035#:~:text=The%20government%20has%20today%20(28,cars%20from%202030%20to%202035.">https://www.gov.uk/government/news/government-sets-out-path-to-zero-emission-vehicles-by-2035#:~:text=The%20government%20has%20today%20(28,cars%20from%202030%20to%202035.</a></h5>
+    
+    <h5 id="Energy Education">Energy Education. (n.d.). Electric motor. University of Calgary. Energy Education. Retrieved 10 29, 2023, from <a href="https://energyeducation.ca/encyclopedia/Electric_motor#:~:text=An%20electric%20motor%20is%20a,present%20in%20a%20magnetic%20field.">https://energyeducation.ca/encyclopedia/Electric_motor#:~:text=An%20electric%20motor%20is%20a,present%20in%20a%20magnetic%20field.</a></h5>
+    
+    <h5 id="European Environment Agency, 2020">European Environment Agency. (2020). Average CO2 emissions from new cars and new vans increased again in 2019. European Union. Copenhagen: European Environment Agency. Retrieved 10 29, 2023, from <a href="https://www.eea.europa.eu/highlights/average-co2-emissions-from-new-cars-vans-2019#:~:text=On%20average%2C%20the%20CO2,the%20beginning%20of%20the%20monitoring.">https://www.eea.europa.eu/highlights/average-co2-emissions-from-new-cars-vans-2019#:~:text=On%20average%2C%20the%20CO2,the%20beginning%20of%20the%20monitoring.</a></h5>
+    
+    <h5 id="Eurostat, 2023">Eurostat. (2023). Waste statistics - recycling of batteries and accumulators. European Union, Eurostat. Eurostat. Retrieved 11 30, 2023, from <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Waste_statistics_-_recycling_of_batteries_and_accumulators&stable=0#Recycling_efficiency_for_lead-acid_batteries">https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Waste_statistics_-_recycling_of_batteries_and_accumulators&stable=0#Recycling_efficiency_for_lead-acid_batteries</a></h5>
+    
+    <h5 id="Government Office for Science, 2023">Government Office for Science. (2023). What are the technical and policy barriers to increasing EV battery recycling capacity in the UK? UK government, Government Office for Science. London: Government Office for Science. Retrieved 11 30, 2023, from <a href="https://www.gov.uk/government/publications/electric-vehicle-battery-recycling-capacity/what-are-the-technical-and-policy-barriers-to-increasing-ev-battery-recycling-capacity-in-the-uk">https://www.gov.uk/government/publications/electric-vehicle-battery-recycling-capacity/what-are-the-technical-and-policy-barriers-to-increasing-ev-battery-recycling-capacity-in-the-uk</a></h5>
+    
+    <h5 id="Gunn, 2018">Gunn, S. (2018). The history of transport systems in the UK. UK government, Government Office for Science. London: Government Office for Science. Retrieved 10 25, 2023, from <a href="https://assets.publishing.service.gov.uk/media/5c07d08240f0b670656346e3/Historyoftransport.pdf">https://assets.publishing.service.gov.uk/media/5c07d08240f0b670656346e3/Historyoftransport.pdf</a></h5>
+    
+    <h5 id="Hill, 2023">Hill, G. (2023). Which electric cars can cover more than 300 miles on a charge? What Car. What Car. Retrieved 11 30, 2023, from <a href="https://www.whatcar.com/news/which-electric-cars-can-cover-more-than-300-miles-on-a-charge/n25662">https://www.whatcar.com/news/which-electric-cars-can-cover-more-than-300-miles-on-a-charge/n25662</a></h5>
+    
+    <h5 id="International Energy Agency, 2023">International Energy Agency. (2023). Trends in charging infrastructure. International Energy Agency. International Energy Agency. Retrieved 11 30, 2023, from <a href="https://www.iea.org/reports/global-ev-outlook-2023/trends-in-charging-infrastructure">https://www.iea.org/reports/global-ev-outlook-2023/trends-in-charging-infrastructure</a></h5>
+    
+    <h5 id="Moseman, 2022">Moseman, A. (2022). Are electric vehicles definitely better for the climate than gas-powered cars? Massachusetts Institute of Technology, Climate portal. Massachusetts: Massachusetts Institute of Technology. Retrieved 11 30, 2023, from <a href="https://climate.mit.edu/ask-mit/are-electric-vehicles-definitely-better-climate-gas-powered-cars">https://climate.mit.edu/ask-mit/are-electric-vehicles-definitely-better-climate-gas-powered-cars</a></h5>
+    
+    <h5 id="Movotiv, 2021">Movotiv. (2021). Global Journeys & Markets (mostly pre-covid). Movotiv. Movotiv. Retrieved 10 25, 2023, from <a href="https://movotiv.com/statistics">https://movotiv.com/statistics</a></h5>
+    
+    <h5 id="NASA, 2023">NASA. (2023). Carbon dioxide. NASA. NASA. Retrieved 11 30, 2023, from <a href="https://climate.nasa.gov/vital-signs/carbon-dioxide/#:~:text=Key%20Takeaway%3A,in%20less%20than%20200%20years.">https://climate.nasa.gov/vital-signs/carbon-dioxide/#:~:text=Key%20Takeaway%3A,in%20less%20than%20200%20years.</a></h5>
+    
+    <h5 id="NASA, 2023">NASA. (2023). Is it too late to prevent climate change? NASA. NASA. Retrieved 11 30, 2023, from <a href="https://climate.nasa.gov/faq/16/is-it-too-late-to-prevent-climate-change/#:~:text=While%20the%20effects%20of%20human,otherwise%20persist%20for%20essentially%20forever.">https://climate.nasa.gov/faq/16/is-it-too-late-to-prevent-climate-change/#:~:text=While%20the%20effects%20of%20human,otherwise%20persist%20for%20essentially%20forever.</a></h5>
+    
+    <h5 id="National Grid, 2022">National Grid. (2022). What happens to old electric car batteries? National Grid. National Grid. Retrieved 11 30, 2023, from <a href="https://www.nationalgrid.com/stories/journey-to-net-zero-stories/what-happens-old-electric-car-batteries">https://www.nationalgrid.com/stories/journey-to-net-zero-stories/what-happens-old-electric-car-batteries</a></h5>
+    
+    <h5 id="Office for Zero Emission Vehicles, 2022">Office for Zero Emission Vehicles. (2022). Common misconceptions about electric vehicles. UK government, Office for Zero Emission Vehicles. London: Office for Zero Emission Vehicles. Retrieved 11 30, 2023, from <a href="https://www.gov.uk/government/publications/common-misconceptions-about-electric-vehicles/common-misconceptions-about-electric-vehicles">https://www.gov.uk/government/publications/common-misconceptions-about-electric-vehicles/common-misconceptions-about-electric-vehicles</a></h5>
+    
+    <h5 id="Redwood Recycling, 2023">Redwood recycling. (2023). Redwood recycling. Retrieved 11 30, 2023, from Redwood recycling: <a href="https://www.redwoodmaterials.com/solutions/">https://www.redwoodmaterials.com/solutions/</a></h5>
+    
+    <h5 id="Tesla, 2023">Tesla. (2023). Charging. Tesla. Tesla. Retrieved 11 30, 2023, from <a href="https://www.tesla.com/support/charging">https://www.tesla.com/support/charging</a></h5>
+    
+    <h5 id="United States Geological Survey">United States Geological Survey. (2023). How can climate change affect natural disasters? US government, United States Geological Survey. United States Geological Survey. Retrieved 11 30, 2023, from <a href="https://www.usgs.gov/faqs/how-can-climate-change-affect-natural-disasters#:~:text=With%20increasing%20global%20surface%20temperatures,more%20powerful%20storms%20to%20develop.">https://www.usgs.gov/faqs/how-can-climate-change-affect-natural-disasters#:~:text=With%20increasing%20global%20surface%20temperatures,more%20powerful%20storms%20to%20develop.</a></h5>
+    
+    <h5 id="US Department of Energy, 2021">US Department of Energy. (2021). Emissions from Electric Vehicles. Washington, DC: US Department of Energy. Retrieved 10 29, 2023, from <a href="https://afdc.energy.gov/vehicles/electric_emissions.html">https://afdc.energy.gov/vehicles/electric_emissions.html</a></h5>
+    
+    <h5 id="US Department of Energy">US Department of Energy. (n.d.). How Do All-Electric Cars Work? US Government, US Department of Energy. Washington, DC: US Department of Energy. Retrieved 10 29, 2023, from <a href="https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work">https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work</a></h5>
+    
+    <h5 id="Vehicle Technologies Office, 2013">Vehicle Technologies Office. (2013). Internal Combustion Engine Basics. US Government, Office of Energy Efficiency & Renewable energy. Washington, DC: US Department of Energy. Retrieved 10 29, 2023, from <a href="https://www.energy.gov/eere/vehicles/articles/internal-combustion-engine-basics#:~:text=In%20an%20internal%20combustion%20engine,cylinder%20and%20a%20moving%20piston.">https://www.energy.gov/eere/vehicles/articles/internal-combustion-engine-basics#:~:text=In%20an%20internal%20combustion%20engine,cylinder%20and%20a%20moving%20piston.</a></h5>
+
 </p>
   
 </body>
 
-<h2> Conference Presentation: Bridge Deck Repairs </h2>
+<h2> Conference Presentation: Are electric cars ACTUALLY environmentally friendly? </h2>
 
 <script>
   // Array of slide image URLs
-  var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg];
+  var slideImages = ["slide1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg", "slide5.jpg", "slide6.jpg"];
   var currentSlide = 0;
 
   function showSlide() {
@@ -254,6 +219,12 @@ document.getElementById("date&time").innerHTML = d;
 
   function nextSlide() {
     currentSlide = (currentSlide + 1) % slideImages.length;
+    showSlide();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+    showSlide();
   }
 
   // Function to show a specific slide based on the button clicked
@@ -270,16 +241,20 @@ document.getElementById("date&time").innerHTML = d;
 <div id="slide-container">
 <img id="slide" src="slide1.jpg" alt="Slide 1" style="width:100%; max-width:800px;">
 
+<!-- Previous and Next buttons container -->
 <div class="button-container">
   <button class="button" onclick="prevSlide()">Previous</button>
   <button class="button" onclick="nextSlide()">Next</button>
 </div>
 
+<!-- Slide number buttons container -->
 <div class="slide-number-container">
   <button class="button" onclick="showSlideNumber(1)">1</button>
   <button class="button" onclick="showSlideNumber(2)">2</button>
   <button class="button" onclick="showSlideNumber(3)">3</button>
   <button class="button" onclick="showSlideNumber(4)">4</button>
+  <button class="button" onclick="showSlideNumber(5)">5</button>
+  <button class="button" onclick="showSlideNumber(6)">6</button>
 </div>
 
 <style>
